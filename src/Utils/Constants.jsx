@@ -4,8 +4,8 @@ export const navbarItems = [
     slug: "free-epic-game",
   },
   {
-    name: "Page 2",
-    slug: "page2",
+    name: "Free Games",
+    slug: "free-games",
   },
   {
     name: "Page 3",
