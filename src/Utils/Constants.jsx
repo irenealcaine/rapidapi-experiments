@@ -8,8 +8,8 @@ export const navbarItems = [
     slug: "free-games",
   },
   {
-    name: "Page 3",
-    slug: "page3",
+    name: "Random Drink Meal",
+    slug: "random-drink-meal",
   },
   {
     name: "Page 4",
