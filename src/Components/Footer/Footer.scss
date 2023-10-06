@@ -12,13 +12,15 @@
 
   //   fixed if you wanna to see it always, absolute if you wanna it to stay in top
   position: fixed;
+  z-index: 100;
+
   // position: absolute;
 
   right: 0;
   left: 0;
   bottom: 0;
 
-  &.dark{
+  &.dark {
     background-color: $dark-blue;
     border-top: 2px solid $blue;
     // color: $dark;
@@ -29,7 +31,7 @@
     justify-content: flex-end;
     gap: 15px;
 
-    .footer-item{
+    .footer-item {
       &:hover {
         text-decoration: underline;
       }
@@ -38,7 +40,6 @@
         font-weight: 700;
       }
     }
-
   }
 
   .color-options {

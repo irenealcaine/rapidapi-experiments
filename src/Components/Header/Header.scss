@@ -12,24 +12,24 @@
 
   //   fixed if you wanna to see it always, absolute if you wanna it to stay in top
   position: fixed;
+  z-index: 100;
   // position: absolute;
 
   right: 0;
   left: 0;
   top: 0;
 
-  &.dark{
+  &.dark {
     background-color: $dark-blue;
     border-bottom: 2px solid $blue;
     // color: $dark;
   }
-  .logo-link{
+  .logo-link {
     display: flex;
     .logo {
       height: calc($header-height - 5px);
     }
   }
-
 
   .navigation {
     display: flex;
@@ -54,7 +54,6 @@
 
 @media screen and (max-width: 768px) {
   .header {
-
     .navigation {
       display: none;
 
@@ -74,15 +73,13 @@
         // full width
         // left: 5px;
 
-          &.dark{
-            background-color: $dark-blue;
-            border: 2px solid $blue;
-            // color: $dark;
-          }
-
+        &.dark {
+          background-color: $dark-blue;
+          border: 2px solid $blue;
+          // color: $dark;
+        }
       }
     }
-
 
     .menu-toggle {
       display: flex;
