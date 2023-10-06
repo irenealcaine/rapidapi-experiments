@@ -78,14 +78,23 @@ const FreeGames = () => {
             </Link>
 
             <p className="game-description">{game.short_description}</p>
-            <p className="game-genre">{game.genre}</p>
-            <p className="game-platform">{game.platform}</p>
-            <p className="game-publisher">{game.publisher}</p>
-            <p className="game-release_date">{game.release_date}</p>
-            <Link
-              to={game.freetogame_profile_url}
-              className="game-release_date"
-            >
+            <p className="game-genre">
+              <span>Genre: </span>
+              {game.genre}
+            </p>
+            <p className="game-platform">
+              <span>Platform: </span>
+              {game.platform}
+            </p>
+            <p className="game-publisher">
+              <span>Publisher: </span>
+              {game.publisher}
+            </p>
+            <p className="game-release_date">
+              <span>Date: </span>
+              {game.release_date}
+            </p>
+            <Link to={game.freetogame_profile_url} className="game-profile">
               Freetogame profile
             </Link>
           </div>
