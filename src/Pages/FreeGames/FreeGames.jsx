@@ -22,23 +22,52 @@ const FreeGames = () => {
       title: "Diablo Immortal",
       thumbnail: "https://www.freetogame.com/g/521/thumbnail.jpg",
       short_description:
-        "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
+        "A free-to-play, browser-based fantasy RPG developed \r\nby Game Hollywood and published by \r\nProficient City.",
       game_url: "https://www.freetogame.com/open/diablo-immortal",
       genre: "MMOARPG",
-      platform: "PC (Windows)",
+      platform: "PC (Windows), Web Browser",
       publisher: "Blizzard Entertainment",
       developer: "Blizzard Entertainment",
       release_date: "2022-06-02",
       freetogame_profile_url: "https://www.freetogame.com/diablo-immortal",
+    },
+    {
+      id: 388,
+      title: "Lord’s Road",
+      thumbnail: "https://www.freetogame.com/g/388/thumbnail.jpg",
+      short_description:
+        "A free-to-play 2D browser-based fantasy MMORPG that features two playable classes.",
+      game_url: "https://www.freetogame.com/open/lords-road",
+      genre: "MMORPG",
+      platform: "Web Browser",
+      publisher: "AMZGame",
+      developer: "AMZGame",
+      release_date: "2015-06-03",
+      freetogame_profile_url: "https://www.freetogame.com/lords-road",
+    },
+    {
+      id: 181,
+      title: "8BitMMO",
+      thumbnail: "https://www.freetogame.com/g/181/thumbnail.jpg",
+      short_description:
+        "A free to play retro­-style 2D MMO and a giant construction sandbox! ",
+      game_url: "https://www.freetogame.com/open/8bitmmo",
+      genre: "MMORPG",
+      platform: "PC (Windows), Web Browser",
+      publisher: "Archive Entertainment ",
+      developer: "Archive Entertainment ",
+      release_date: "2015-01-26",
+      freetogame_profile_url: "https://www.freetogame.com/8bitmmo",
     },
   ];
 
   return (
     <div className="free-games">
       <h1>Free games</h1>
-      {exampleData.map((game) => (
-        <div key={game.id} className="container">
-          <div className="game-content">
+
+      <div className="container">
+        {exampleData.map((game) => (
+          <div key={game.id} className="game-content">
             <Link to={game.game_url}>
               <h2 className="game-title">{game.title}</h2>
               <img
@@ -57,11 +86,11 @@ const FreeGames = () => {
               to={game.freetogame_profile_url}
               className="game-release_date"
             >
-              freetogame_profile_url
+              Freetogame profile
             </Link>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
