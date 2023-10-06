@@ -76,12 +76,9 @@ const FreeEpicGame = () => {
               src={game.offerImageWide}
             />
             <p className="game-description">{game.description}</p>
-            {/* <p className="">{game.publisher}</p> */}
-            {/* <p>{game.discountPrice}</p> */}
             <p className="game-price">
               Oiginal price: <span>{game.originalPrice / 100}</span> €
             </p>
-            {/* <a href={game.appUrl}>Link</a> */}
           </div>
         </Link>
       ))}
