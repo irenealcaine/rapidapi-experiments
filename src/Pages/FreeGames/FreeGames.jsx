@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import "./FreeGames.scss";
 
+// https://rapidapi.com/digiwalls/api/free-to-play-games-database/
+// https://www.freetogame.com/api-doc
+
 const FreeGames = () => {
   const exampleData = [
     {
