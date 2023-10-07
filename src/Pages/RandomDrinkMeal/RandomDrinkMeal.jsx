@@ -44,7 +44,7 @@ const RandomDrinkMeal = () => {
 
   return (
     <div className="random-drink-meal">
-      <h1>Random Drink Meal</h1>
+      <h1>Random Drink & Meal</h1>
 
       {randomDrink.map((drink) => (
         <div className="drink-item" key={drink.idDrink}>
