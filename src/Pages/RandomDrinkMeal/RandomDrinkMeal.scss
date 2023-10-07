@@ -1,0 +1,46 @@
+.random-drink-meal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .drink-item,
+  .meal-item {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    border: 1px solid white;
+
+    .drink-img,
+    .meal-img {
+      width: 300px;
+      height: 100%;
+    }
+
+    .drink-instructions,
+    .meal-instructions {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .random-drink-meal {
+
+    .drink-item,
+    .meal-item {
+      flex-direction: column;
+
+      .drink-img,
+      .meal-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .drink-content,
+      .meal-content {
+        padding: 0 20px;
+      }
+    }
+  }
+}
