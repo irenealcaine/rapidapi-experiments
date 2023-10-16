@@ -51,6 +51,32 @@
 
       &.active {
         font-weight: 700;
+        position: relative;
+
+        &.dark {
+          &::before,
+          &::after {
+            background-color: $blue;
+          }
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          width: 2px;
+          background-color: $dark-blue;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+        }
+
+        &::before {
+          left: -4px;
+        }
+
+        &::after {
+          right: -4px;
+        }
       }
     }
   }
