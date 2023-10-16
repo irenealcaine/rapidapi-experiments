@@ -16,10 +16,16 @@
     overflow: hidden;
     box-shadow: 5px 5px 10px $dark-blue;
 
+    background: linear-gradient(145deg, $light 50%, $blue);
+    &.dark {
+      background: linear-gradient(145deg, $dark 50%, $dark-blue);
+    }
+
     .drink-img,
     .meal-img {
       width: 300px;
       height: 100%;
+      border-radius: 5px;
     }
 
     .drink-instructions,
