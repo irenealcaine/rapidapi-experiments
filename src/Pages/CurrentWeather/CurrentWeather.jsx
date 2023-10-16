@@ -78,43 +78,40 @@ const Page4 = () => {
       <div className="weather-heading">
         <h2 className={darkMode ? "dark" : ""}>
           {/* {exampleData.current.summary} */}
-          {currentWeather.current.summary}
+          {currentWeather?.current?.summary}
         </h2>
-        <div className="images">
+        {currentWeather?.current?.icon_num && <div className="images">
           <img
             src={require(
-              // `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
-              `../../Assets/Images/weather/${currentWeather.current.icon_num}.png`,
+              `../../Assets/Images/weather/${currentWeather?.current?.icon_num}.png`,
             )}
             alt="weather logo"
           />
           <img
             src={require(
-              `../../Assets/Images/weather/${currentWeather.current.icon_num}.png`,
-              // `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
+              `../../Assets/Images/weather/${currentWeather?.current?.icon_num}.png`,
             )}
             alt="weather logo"
           />
           <img
             src={require(
-              `../../Assets/Images/weather/${currentWeather.current.icon_num}.png`,
-              // `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
+              `../../Assets/Images/weather/${currentWeather?.current?.icon_num}.png`,
             )}
             alt="weather logo"
           />
-        </div>
+        </div>}
       </div>
       <div className={`weather-content ${darkMode ? "dark" : ""}`}>
         <div className="temperature">
           <h3>Temperature</h3>
-          <p>{currentWeather.current.temperature} ºC</p>
+          <p>{currentWeather?.current?.temperature} ºC</p>
           {/* <p>{exampleData.current.temperature} ºC</p> */}
         </div>
         <div className="wind">
           <h3>Wind</h3>
           <p>
-            {currentWeather.current.wind.speed} km/h,{" "}
-            {currentWeather.current.wind.dir}
+            {currentWeather?.current?.wind?.speed} km/h,{" "}
+            {currentWeather?.current?.wind?.dir}
           </p>
           {/* <p>
             {exampleData.current.wind.speed} km/h,{" "}
@@ -123,12 +120,12 @@ const Page4 = () => {
         </div>
         <div className="precipitation">
           <h3>Precipitation</h3>
-          <p>{currentWeather.current.precipitation.total} mm</p>
+          <p>{currentWeather?.current?.precipitation?.total} mm</p>
           {/* <p>{exampleData.current.precipitation.total} mm</p> */}
         </div>
         <div className="humidity">
           <h3>Humidity</h3>
-          <p>{currentWeather.current.humidity} %</p>
+          <p>{currentWeather?.current?.humidity} %</p>
           {/* <p>{exampleData.current.humidity} %</p> */}
         </div>
       </div>
