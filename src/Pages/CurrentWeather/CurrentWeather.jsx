@@ -1,9 +1,13 @@
 import "./CurrentWeather.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "../../Context/darkModeContext";
 
 // https://www.meteosource.com/documentation
 // https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource
 
 const Page4 = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const exampleData = {
     lat: "39.69951N",
     lon: "0.70868W",
@@ -41,7 +45,9 @@ const Page4 = () => {
     <div className="current-weather">
       <h1>Current Weather</h1>
       <div className="weather-heading">
-        <h2>{exampleData.current.summary}</h2>
+        <h2 className={darkMode ? "dark" : ""}>
+          {exampleData.current.summary}
+        </h2>
         <div className="images">
           <img
             src={require(
@@ -63,7 +69,7 @@ const Page4 = () => {
           />
         </div>
       </div>
-      <div className="weather-content">
+      <div className={`weather-content ${darkMode ? "dark" : ""}`}>
         <div className="temperature">
           <h3>Temperature</h3>
           <p>{exampleData.current.temperature} ºC</p>

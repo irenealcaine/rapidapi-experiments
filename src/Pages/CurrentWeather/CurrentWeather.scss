@@ -10,16 +10,17 @@
 
     h2 {
       z-index: 10;
+      text-decoration: underline;
       text-shadow:
-        0 0 2px $dark-blue,
-        0 0 5px $dark-blue,
-        0 0 10px $dark-blue;
+        0 0 2px $blue,
+        0 0 5px $blue,
+        0 0 10px $blue;
 
       &.dark {
         text-shadow:
-          0 0 2px $blue,
-          0 0 5px $blue,
-          0 0 10px $blue;
+          0 0 2px $dark-blue,
+          0 0 5px $dark-blue,
+          0 0 10px $dark-blue;
       }
     }
 
@@ -49,6 +50,13 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+
+    box-shadow: 5px 5px 10px $dark-blue;
+
+    background: linear-gradient(145deg, $light 50%, $blue);
+    &.dark {
+      background: linear-gradient(145deg, $dark 50%, $dark-blue);
+    }
   }
 }
 
