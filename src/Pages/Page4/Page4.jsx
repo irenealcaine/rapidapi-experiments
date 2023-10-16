@@ -1,5 +1,7 @@
 import "./Page4.scss";
-import logo from "../../Assets/Images/weather/11.png";
+
+// https://www.meteosource.com/documentation
+// https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource
 
 const Page4 = () => {
   const exampleData = {
