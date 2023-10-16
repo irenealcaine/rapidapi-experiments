@@ -5,12 +5,21 @@
   background-color: $light;
   color: $dark;
   position: relative;
-
   padding: 70px 0;
+
+  p,
+  li {
+    color: $gray;
+  }
 
   &.dark {
     background-color: $dark;
     color: $light;
+
+    p,
+    li {
+      color: $light-gray;
+    }
   }
 
   .content {
