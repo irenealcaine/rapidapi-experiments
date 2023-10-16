@@ -6,7 +6,7 @@ import NotFound from "./Pages/NotFound/NotFound";
 import FreeEpicGame from "./Pages/FreeEpicGame/FreeEpicGame";
 import FreeGames from "./Pages/FreeGames/FreeGames";
 import RandomDrinkMeal from "./Pages/RandomDrinkMeal/RandomDrinkMeal";
-import Page4 from "./Pages/Page4/Page4";
+import CurrentWeather from "./Pages/CurrentWeather/CurrentWeather";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path="/free-epic-game" element={<FreeEpicGame />} />
             <Route path="/free-games" element={<FreeGames />} />
             <Route path="/random-drink-meal" element={<RandomDrinkMeal />} />
-            <Route path="/page4" element={<Page4 />} />
+            <Route path="/current-weather" element={<CurrentWeather />} />
           </Routes>
         </Main>
       </BrowserRouter>

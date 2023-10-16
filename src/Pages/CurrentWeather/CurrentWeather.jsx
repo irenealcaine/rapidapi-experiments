@@ -1,4 +1,4 @@
-import "./Page4.scss";
+import "./CurrentWeather.scss";
 
 // https://www.meteosource.com/documentation
 // https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource
@@ -40,7 +40,7 @@ const Page4 = () => {
 
   return (
     <div className="page4">
-      <h1>Curent Weather</h1>
+      <h1>Current Weather</h1>
       <h2>{exampleData.current.summary}</h2>
       <img
         src={require(

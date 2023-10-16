@@ -12,7 +12,7 @@ export const navbarItems = [
     slug: "random-drink-meal",
   },
   {
-    name: "Page 4",
-    slug: "page4",
+    name: "Current Weather",
+    slug: "current-weather",
   },
 ];
