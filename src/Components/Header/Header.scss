@@ -19,10 +19,16 @@
   left: 0;
   top: 0;
 
+  li {
+    color: $dark !important;
+  }
+
   &.dark {
     background-color: $dark-blue;
     border-bottom: 2px solid $blue;
-    // color: $dark;
+    li {
+      color: $light !important;
+    }
   }
   .logo-link {
     display: flex;
