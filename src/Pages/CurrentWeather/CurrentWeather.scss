@@ -1,0 +1,63 @@
+@import "src/Variables.scss";
+
+.current-weather {
+  .weather-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    h2 {
+      z-index: 10;
+      text-shadow:
+        0 0 2px $dark-blue,
+        0 0 5px $dark-blue,
+        0 0 10px $dark-blue;
+
+      &.dark {
+        text-shadow:
+          0 0 2px $blue,
+          0 0 5px $blue,
+          0 0 10px $blue;
+      }
+    }
+
+    .images {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .weather-content {
+    margin: 20px auto;
+    width: fit-content;
+    padding: 5px 50px;
+    padding-bottom: 20px;
+    border: 2px solid $blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .current-weather {
+    .weather-content {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  }
+}

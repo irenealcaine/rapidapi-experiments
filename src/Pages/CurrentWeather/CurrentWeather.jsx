@@ -36,28 +36,54 @@ const Page4 = () => {
       visibility: 14.1,
     },
   };
-  console.log(exampleData);
 
   return (
-    <div className="page4">
+    <div className="current-weather">
       <h1>Current Weather</h1>
-      <h2>{exampleData.current.summary}</h2>
-      <img
-        src={require(
-          `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
-        )}
-        alt="weather logo"
-      />
-      <h3>Temperature</h3>
-      <p>{exampleData.current.temperature} ºC</p>
-      <h3>Wind</h3>
-      <p>
-        {exampleData.current.wind.speed} km/h, {exampleData.current.wind.dir}
-      </p>
-      <h3>Precipitation</h3>
-      <p>{exampleData.current.precipitation.total} mm</p>
-      <h3>Humidity</h3>
-      <p>{exampleData.current.humidity} %</p>
+      <div className="weather-heading">
+        <h2>{exampleData.current.summary}</h2>
+        <div className="images">
+          <img
+            src={require(
+              `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
+            )}
+            alt="weather logo"
+          />
+          <img
+            src={require(
+              `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
+            )}
+            alt="weather logo"
+          />
+          <img
+            src={require(
+              `../../Assets/Images/weather/${exampleData.current.icon_num}.png`,
+            )}
+            alt="weather logo"
+          />
+        </div>
+      </div>
+      <div className="weather-content">
+        <div className="temperature">
+          <h3>Temperature</h3>
+          <p>{exampleData.current.temperature} ºC</p>
+        </div>
+        <div className="wind">
+          <h3>Wind</h3>
+          <p>
+            {exampleData.current.wind.speed} km/h,{" "}
+            {exampleData.current.wind.dir}
+          </p>
+        </div>
+        <div className="precipitation">
+          <h3>Precipitation</h3>
+          <p>{exampleData.current.precipitation.total} mm</p>
+        </div>
+        <div className="humidity">
+          <h3>Humidity</h3>
+          <p>{exampleData.current.humidity} %</p>
+        </div>
+      </div>
     </div>
   );
 };
