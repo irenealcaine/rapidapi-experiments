@@ -20,6 +20,8 @@
   left: 0;
   bottom: 0;
 
+  transition: $transition;
+
   &.dark {
     background-color: $dark-blue;
     border-top: 2px solid $blue;

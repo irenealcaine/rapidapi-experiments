@@ -7,9 +7,12 @@
   position: relative;
   padding: 70px 0;
 
+  transition: $transition;
+
   p,
   li {
     color: $gray;
+    transition: $transition;
   }
 
   &.dark {
