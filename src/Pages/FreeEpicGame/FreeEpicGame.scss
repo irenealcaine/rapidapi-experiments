@@ -1,8 +1,17 @@
+@import "src/Variables.scss";
+
 .freeEpicGame {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  color: white;
+  gap: 30px;
+  color: $light;
+
+  h1 {
+    color: $dark;
+    &.dark {
+      color: $light;
+    }
+  }
   .container {
     max-width: 100%;
     position: relative;
@@ -50,6 +59,7 @@
         background-color: #4400ffcd;
         backdrop-filter: blur(5px);
         border-radius: 20px;
+        color: $light;
       }
 
       .game-price {
@@ -59,9 +69,10 @@
         backdrop-filter: blur(5px);
         border-radius: 20px;
         text-align: center;
+        color: $light;
         span {
           font-size: 30px;
-          color: aqua;
+          color: $blue;
           font-weight: 700;
         }
       }

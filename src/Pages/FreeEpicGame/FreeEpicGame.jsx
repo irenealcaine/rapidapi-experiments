@@ -1,25 +1,27 @@
 import "./FreeEpicGame.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { DarkModeContext } from "../../Context/darkModeContext";
 
 const FreeEpicGame = () => {
   const [gameData, setGameData] = useState([]);
+  const { darkMode } = useContext(DarkModeContext);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(process.env.REACT_APP_URL_DE_LA_API, {
           headers: {
-            'X-RapidAPI-Host': process.env.REACT_APP_TU_RAPIDAPI_HOST,
-            'X-RapidAPI-Key': process.env.REACT_APP_TU_RAPIDAPI_KEY,
+            "X-RapidAPI-Host": process.env.REACT_APP_TU_RAPIDAPI_HOST,
+            "X-RapidAPI-Key": process.env.REACT_APP_TU_RAPIDAPI_KEY,
           },
         });
 
         setGameData(response.data);
         // console.log(gameData)
       } catch (error) {
-        console.error('Error al obtener datos:', error);
+        console.error("Error al obtener datos:", error);
       }
     };
 
@@ -60,7 +62,7 @@ const FreeEpicGame = () => {
 
   return (
     <div className="freeEpicGame">
-      <h1>Free Epic Games</h1>
+      <h1 className={darkMode ? "dark" : ""}>Free Epic Games</h1>
       {gameData.map((game) => (
         <Link key={game.name} className="container" to={game.appUrl}>
           <img
