@@ -21,8 +21,8 @@ const Market = () => {
           },
         });
 
-        setJokes(response.data);
-        console.log(jokes);
+        setMarketData(response.data);
+        console.log(marketData);
       } catch (error) {
         console.error("Error al obtener datos:", error);
       }
