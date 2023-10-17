@@ -1,5 +1,7 @@
 import "./Jokes.scss";
 
+// https://rapidapi.com/apininjas/api/jokes-by-api-ninjas
+
 const Jokes = () => {
   const exampleData = [
     {
