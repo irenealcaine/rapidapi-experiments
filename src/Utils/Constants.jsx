@@ -15,4 +15,8 @@ export const navbarItems = [
     name: "Current Weather",
     slug: "current-weather",
   },
+  {
+    name: "Jokes",
+    slug: "jokes",
+  },
 ];
