@@ -23,4 +23,8 @@ export const navbarItems = [
     name: "Market",
     slug: "market",
   },
+  {
+    name: "Mexican Food",
+    slug: "mexican-food",
+  },
 ];

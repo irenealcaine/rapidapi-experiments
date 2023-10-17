@@ -9,6 +9,7 @@ import RandomDrinkMeal from "./Pages/RandomDrinkMeal/RandomDrinkMeal";
 import CurrentWeather from "./Pages/CurrentWeather/CurrentWeather";
 import Jokes from "./Pages/Jokes/Jokes";
 import Market from "./Pages/Market/Market";
+import MexicanFood from "./Pages/MexicanFood/MexicanFood";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/current-weather" element={<CurrentWeather />} />
             <Route path="/jokes" element={<Jokes />} />
             <Route path="/market" element={<Market />} />
+            <Route path="/mexican-food" element={<MexicanFood />} />
           </Routes>
         </Main>
       </BrowserRouter>
