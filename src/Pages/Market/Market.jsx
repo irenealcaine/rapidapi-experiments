@@ -13,7 +13,7 @@ const Market = () => {
       try {
         const response = await axios.get(process.env.REACT_APP_URL_MARKET, {
           params: {
-            performanceIds: '0P0000OQN8,0P000000GY'
+            performanceIds: '0P0000OQN8,0P000000GY,0P000002JD,0P00008IVF,0P00006NNM,0P00006MR4,0P00001IS1,0P00000195,0P00001GJH,0P0001DBXB,0P000005CO,0P000000PA'
           },
           headers: {
             "X-RapidAPI-Host": process.env.REACT_APP_MARKET_HOST,
@@ -34,8 +34,8 @@ const Market = () => {
   return (
     <div className="market">
       <h1>Market</h1>
-      {console.log(MarketExampleData)}
-      {Object.values(MarketExampleData).map((market) => (
+
+      {Object.values(marketData).map((market) => (
         <div
           className={`market-item ${market.percentNetChange.value < 0 && "negative"
             }`}
