@@ -23,9 +23,11 @@ const Jokes = () => {
   return (
     <div className="jokes">
       <h1>Jokes</h1>
-      {exampleData.map((joke) => (
-        <p className="joke">{joke.joke}</p>
-      ))}
+      <div className="jokes-list">
+        {exampleData.map((joke) => (
+          <p className="joke">{joke.joke}</p>
+        ))}
+      </div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import FreeGames from "./Pages/FreeGames/FreeGames";
 import RandomDrinkMeal from "./Pages/RandomDrinkMeal/RandomDrinkMeal";
 import CurrentWeather from "./Pages/CurrentWeather/CurrentWeather";
 import Jokes from "./Pages/Jokes/Jokes";
+import Market from "./Pages/Market/Market";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/random-drink-meal" element={<RandomDrinkMeal />} />
             <Route path="/current-weather" element={<CurrentWeather />} />
             <Route path="/jokes" element={<Jokes />} />
+            <Route path="/market" element={<Market />} />
           </Routes>
         </Main>
       </BrowserRouter>

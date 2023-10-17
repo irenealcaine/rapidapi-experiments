@@ -1,0 +1,39 @@
+.market {
+  .market-item {
+    border: 1px solid blue;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background: linear-gradient(-20deg, transparent 50%, green 120%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    &.negative {
+      background: linear-gradient(-20deg, transparent 50%, red 120%);
+    }
+
+    .value {
+      .percentage {
+        font-size: 12px;
+        border-radius: 100px;
+        color: green;
+        &.negative {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .market {
+    .market-item {
+      flex-direction: column;
+      gap: 0px;
+      padding-bottom: 10px;
+    }
+  }
+}

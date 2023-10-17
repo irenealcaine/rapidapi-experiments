@@ -19,4 +19,8 @@ export const navbarItems = [
     name: "Jokes",
     slug: "jokes",
   },
+  {
+    name: "Market",
+    slug: "market",
+  },
 ];
